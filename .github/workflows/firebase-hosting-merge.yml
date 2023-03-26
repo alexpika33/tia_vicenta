@@ -22,7 +22,11 @@ jobs:
           ls -la
       - name: Clear npm cache
         run: npm cache clean --force
-      - run: npm run predeploy
+      - name: Install dependencies
+        run: npm ci
+        working-directory: ./tia_vicenta
+      - name: Build the Angular app
+        run: npx ng build --prod
         working-directory: ./tia_vicenta
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
