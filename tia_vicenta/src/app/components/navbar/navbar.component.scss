@@ -1,0 +1,49 @@
+
+.navbar-container {
+  @apply fixed w-full bg-transparent;
+  backdrop-filter: blur(5px);
+}
+
+.navbar-content {
+  @apply container mx-auto px-6 py-3 bg-black;
+}
+
+.navbar-flex {
+  @apply flex items-center justify-between;
+}
+
+.navbar-title {
+  @apply text-left;
+}
+
+.navbar-title-text {
+  @apply text-xl font-bold text-white;
+}
+
+.navbar-options {
+  @apply hidden md:flex items-center space-x-6;
+}
+
+.navbar-option {
+  @apply text-white;
+}
+
+.navbar-hamburger {
+  @apply md:hidden flex items-center;
+}
+
+.hamburger-button {
+  @apply text-white;
+}
+
+.mobile-menu {
+  @apply hidden md:hidden mt-4;
+}
+
+.mobile-menu-item {
+  @apply block py-2 px-4 text-sm text-white;
+}
+
+.block {
+  display: block;
+}

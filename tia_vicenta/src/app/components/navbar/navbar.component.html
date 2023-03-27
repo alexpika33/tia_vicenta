@@ -1,0 +1,26 @@
+<header class="navbar-container">
+  <nav class="navbar-content">
+    <div class="navbar-flex">
+      <div class="navbar-title">
+        <a href="#" class="navbar-title-text">Título del Bar</a>
+      </div>
+      <div class="navbar-options md:hidden">
+        <a href="#" class="navbar-option">Opción 1</a>
+        <a href="#" class="navbar-option">Opción 2</a>
+        <a href="#" class="navbar-option">Opción 3</a>
+        <a href="#" class="navbar-option">Opción 4</a>
+      </div>
+      <div class="navbar-hamburger md:hidden">
+        <button class="hamburger-button" (click)="toggleMobileMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu hidden md:hidden mt-4" [ngClass]="{ 'block': mobileMenuOpen }">
+      <a href="#" class="mobile-menu-item">Opción 1</a>
+      <a href="#" class="mobile-menu-item">Opción 2</a>
+      <a href="#" class="mobile-menu-item">Opción 3</a>
+      <a href="#" class="mobile-menu-item">Opción 4</a>
+    </div>
+  </nav>
+</header>
