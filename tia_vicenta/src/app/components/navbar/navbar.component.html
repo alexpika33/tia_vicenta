@@ -1,26 +1,26 @@
-<header class="navbar-container">
-  <nav class="navbar-content">
-    <div class="navbar-flex">
-      <div class="navbar-title">
-        <a href="#" class="navbar-title-text">Título del Bar</a>
+<header>
+  <nav class="navbar navbar-expand-lg custom-bg">
+    <div class="container">
+      <a class="navbar-brand custom-title" href="#">Título del Bar</a>
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link custom-link" href="#">Opción 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-link" href="#">Opción 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-link" href="#">Opción 3</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-link" href="#">Opción 4</a>
+          </li>
+        </ul>
       </div>
-      <div class="navbar-options md:hidden">
-        <a href="#" class="navbar-option">Opción 1</a>
-        <a href="#" class="navbar-option">Opción 2</a>
-        <a href="#" class="navbar-option">Opción 3</a>
-        <a href="#" class="navbar-option">Opción 4</a>
-      </div>
-      <div class="navbar-hamburger md:hidden">
-        <button class="hamburger-button" (click)="toggleMobileMenu()">
-          <i class="fas fa-bars"></i>
-        </button>
-      </div>
-    </div>
-    <div class="mobile-menu hidden md:hidden mt-4" [ngClass]="{ 'block': mobileMenuOpen }">
-      <a href="#" class="mobile-menu-item">Opción 1</a>
-      <a href="#" class="mobile-menu-item">Opción 2</a>
-      <a href="#" class="mobile-menu-item">Opción 3</a>
-      <a href="#" class="mobile-menu-item">Opción 4</a>
     </div>
   </nav>
 </header>

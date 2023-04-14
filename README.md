@@ -1,6 +1,6 @@
 ## Tía Vicenta
 
-Este proyecto es una aplicación web desarrollada en Angular 13 que permite a los usuarios ver y compartir recetas de cocina. Está alojado en Firebase Hosting.
+Este proyecto es una aplicación web desarrollada en Angular 14 que permite a los usuarios ver y compartir recetas de cocina. Está alojado en Firebase Hosting.
 
 ### Tecnologías utilizadas
 - Angular: framework de desarrollo web.
