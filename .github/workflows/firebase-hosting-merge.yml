@@ -24,6 +24,10 @@ jobs:
       - name: Clear npm cache
         run: npm cache clean --force
 
+      - name: NPM I
+      run: npm i
+      working-directory: ./tia_vicenta
+
       - name: Install Dependencies
         run: npm ci
         working-directory: ./tia_vicenta
